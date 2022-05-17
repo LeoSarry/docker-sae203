@@ -2,7 +2,7 @@
 FROM httpd
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
-COPY ./html/ /usr/local/apache2/htdocs/
+COPY ./index.html /usr/local/apache2/htdocs/
 
 # Exécuter la commande echo sur le conteneur 
 # (il peut s'agir de n'importe quelle autre commande)

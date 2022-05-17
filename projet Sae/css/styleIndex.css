@@ -11,6 +11,11 @@ body {
       padding: 0 3rem;
 }
 
+div.title{
+      max-width: 1200px;
+      text-align: center;
+}
+
 
 i {
       font-size: 42px;
@@ -98,6 +103,16 @@ img.logo{
       margin-top: 34vh;
       display: inline-flex;
       flex-wrap: wrap;
+}
+
+h1{
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      font-family: Roboto;
+      position: absolute;
+      margin-top: -3%;
 }
 
 

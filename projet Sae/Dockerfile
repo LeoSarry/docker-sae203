@@ -2,11 +2,8 @@
 FROM httpd
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
-COPY ./index.html /usr/local/apache2/htdocs/
-COPY ./css/styleIndex.css /usr/local/apache2/htdocs/
-COPY ./images/img.jpg /usr/local/apache2/htdocs/
-COPY ./images/logoUniv.gif /usr/local/apache2/htdocs/
-COPY ./videos/video.mp4 /usr/local/apache2/htdocs/
+COPY . /usr/local/apache2/htdocs/
+
 
 # Exécuter la commande echo sur le conteneur 
 # (il peut s'agir de n'importe quelle autre commande)

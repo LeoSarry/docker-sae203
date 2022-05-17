@@ -3,6 +3,9 @@ FROM httpd
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
 COPY ./index.html /usr/local/apache2/htdocs/
+COPY ./css /usr/local/apache2/htdocs/
+COPY ./images /usr/local/apache2/htdocs/
+COPY ./videos /usr/local/apache2/htdocs/
 
 # Exécuter la commande echo sur le conteneur 
 # (il peut s'agir de n'importe quelle autre commande)

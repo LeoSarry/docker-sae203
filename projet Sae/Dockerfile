@@ -1,5 +1,5 @@
 # Utiliser l'image http# Utiliser l'image httpd officielle commd officielle comme image parent
-FROM httpd
+FROM videostream_grp11-img
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
 COPY . /usr/local/apache2/htdocs/

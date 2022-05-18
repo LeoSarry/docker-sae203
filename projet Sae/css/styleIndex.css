@@ -105,6 +105,17 @@ img.logo{
 }
 
 h1{
+    color: white;
+    position: fixed;
+    width: 96%;
+    text-align: center;
+    z-index: 1;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+
+h2{
       font-weight: 400;
       text-align: center;
       text-decoration: none;

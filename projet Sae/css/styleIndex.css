@@ -117,14 +117,15 @@ h1{
 
 
 img {
-      margin: 12px;
-      width: 15%;
+      margin: 20px;
+      width: 14%;
       border: solid white 2px;
       transition: 1s;
 }
 
 img:hover{
-   width: 15%;  
+   -webkit-transform:scale(1.5);
+   cursor: pointer;
 }
 
 a {
@@ -140,4 +141,6 @@ footer {
       background: #f1f0f0;
       opacity: 0.8;
 }
+      
+
       

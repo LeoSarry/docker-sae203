@@ -13,7 +13,7 @@ RUN  apt-get update && \
 
 # Exécuter la commande echo sur le conteneur 
 # (il peut s'agir de n'importe quelle autre commande)
-RUN echo index.html
+RUN echo videoStream.html
 
 
 # Rendre le port 80 accessible au monde en dehors de ce conteneur

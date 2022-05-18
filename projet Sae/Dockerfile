@@ -1,14 +1,13 @@
 # Utiliser l'image http# Utiliser l'image httpd officielle commd officielle comme image parent
 FROM debian:latest
 
-# Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
-COPY . /usr/share/nginx/html
-COPY ./index.html /usr/share/nginx/html/index.html
-
-
 RUN  apt-get update && \
     apt-get -y install  \
     nginx 
+
+# Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
+COPY . /usr/share/nginx/html
+COPY ./index.html /usr/share/nginx/html/index.html
 
 
 # Exécuter la commande echo sur le conteneur 

@@ -3,7 +3,7 @@ FROM debian:latest
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
 COPY . /usr/share/nginx/html
-COPY ./videoStream.html /usr/share/nginx/html/index.html
+COPY ./videoStream.html /usr/share/nginx/html/videoStream.html
 
 
 RUN  apt-get update && \

@@ -8,8 +8,7 @@ RUN  apt-get update && \
     apt-get -y install  \
     apache2 \
     mariadb-server \
-    mariadb-client \
-    html
+    mariadb-client 
 
 
 # Exécuter la commande echo sur le conteneur 

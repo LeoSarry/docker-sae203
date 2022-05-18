@@ -38,20 +38,28 @@
                   <h1>Vidéo à la demande :</h1>
             </div>
 
-              <a href="./videos/video.mp4" target="_blank"><img src="./images/dbz.jpg"><br></a>
+              <img src="./images/dbz.jpg" onclick="afficherVideo('videos/video.mp4'); document.getElementById('videos').style.display='block';"><br>
           
-              <a href="videos/videoElden.mp4" target="_blank"><img src="images/elden.jpg"><br></a> 
+              <img src="images/elden.jpg" onclick="afficherVideo('videos/videoElden.mp4'); document.getElementById('videos').style.display='block';"><br>
 
-              <a href="videos/bfVideo.mp4" target="_blank"><img src="images/bf.jpeg"><br></a>
+              <img src="images/bf.jpeg" onclick="afficherVideo('videos/bfVideo.mp4'); document.getElementById('videos').style.display='block';"><br>
 
-              <a href="videos/videoAssasin.mp4" target="_blank"><img src="images/assasin.jpg"><br></a>
+              <img src="images/assasin.jpg" onclick="afficherVideo('videos/videoAssasin.mp4'); document.getElementById('videos').style.display='block';"><br>
               
-              <a href="videos/pykeVideo.mp4" target="_blank"><img src="images/pyke.jpg"><br></a>
+              <img src="images/pyke.jpg" onclick="afficherVideo('videos/pykeVideo.mp4'); document.getElementById('videos').style.display='block';"><br>
 
-              <a href="videos/juan.mp4" target="_blank"><img src="images/juan.jpg"><br></a>
+              <img src="images/juan.jpg" onclick="afficherVideo('videos/juan.mp4'); document.getElementById('videos').style.display='block';"><br>
             
                   
             </div>
+
+           <video class="videoServeur" style=" margin-left: auto;
+            margin-right: auto; display: none;" class="video_item" id="videos"  width="640" height="390" autoplay controls>
+           </video>
+
+
+            
+
       </div>
 
       <div id="footer_link"></div>
@@ -62,3 +70,13 @@
 </body>
 
 </html>
+
+<script type="text/javascript">
+      
+function afficherVideo(sourceVideo) {
+
+  document.querySelector(".videoServeur").src = sourceVideo;
+};
+
+</script>
+

@@ -126,6 +126,7 @@ img {
 img:hover{
    -webkit-transform:scale(1.5);
    cursor: pointer;
+   opacity: 0.9;
 }
 
 a {

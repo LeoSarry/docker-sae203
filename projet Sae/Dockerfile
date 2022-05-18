@@ -18,4 +18,4 @@ RUN echo index.html
 # Rendre le port 80 accessible au monde en dehors de ce conteneur
 EXPOSE 80  
 
-#CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]

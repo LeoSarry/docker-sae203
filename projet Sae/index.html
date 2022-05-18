@@ -14,10 +14,12 @@
   <!-- NavBar-->
       <header>
              <nav class="menu">
+
                   <ul class="menu">
                         <li class="logo">
                               <a href="#"><img src="./images/logoUniv.gif" class="logo" alt="logo"></a>
                         </li>
+
                        
                         <li>
                               <a href="#footer_link">Contact</a>
@@ -25,7 +27,7 @@
                   </ul>  
             </nav>
       </header>
-    
+
       <h1>Groupe 11 Sae 2.03</h1>
 
       <!-- Présentation -->
@@ -44,29 +46,29 @@
               document.getElementById('videos').style.display='block';
               document.body.style.backgroundColor = '#0d0603';"><br>
           
-              <img src="images/elden.jpg" onclick="afficherVideo('videos/videoElden.mp4'); 
+              <img class="img" src="images/elden.jpg" onclick="afficherVideo('videos/videoElden.mp4'); 
               document.getElementById('videos').style.display='block';
               document.body.style.backgroundColor = 'black';"><br>
 
-              <img src="images/bf.jpeg" onclick="afficherVideo('videos/bfVideo.mp4'); 
+              <img class="img" src="images/bf.jpeg" onclick="afficherVideo('videos/bfVideo.mp4'); 
               document.getElementById('videos').style.display='block';
               document.body.style.backgroundColor = '#170404';"><br>
 
 
-              <img src="images/assasin.jpg" onclick="afficherVideo('videos/videoAssasin.mp4'); 
+              <img class="img" src="images/assasin.jpg" onclick="afficherVideo('videos/videoAssasin.mp4'); 
               document.getElementById('videos').style.display='block';
               document.body.style.backgroundColor = 'rgb(2 44 88)';"><br>
               
-              <img src="images/pyke.jpg" onclick="afficherVideo('videos/pykeVideo.mp4'); 
+              <img class="img" src="images/pyke.jpg" onclick="afficherVideo('videos/pykeVideo.mp4'); 
               document.getElementById('videos').style.display='block';
               document.body.style.backgroundColor = '#071e26';"><br>
 
-              <img src="images/juan.jpg" onclick="afficherVideo('videos/juan.mp4'); document.getElementById('videos').style.display='block';"><br>
+              <img class="img"  src="images/juan.jpg" onclick="afficherVideo('videos/juan.mp4'); document.getElementById('videos').style.display='block';"><br>
             
-                  
+                      
             </div>
 
-           <video class="videoServeur" id="videos"  width="640" height="390" autoplay controls>
+           <video class="videoServeur"  id="videos"  width="640" height="390" autoplay controls >
            </video>
 
 
@@ -85,10 +87,31 @@
 
 <script type="text/javascript">
       
+      
 function afficherVideo(sourceVideo) {
-
   document.querySelector(".videoServeur").src = sourceVideo;
 };
 
+
+//variable de ma video
+var myVideo=document.getElementById("videos"); 
+
+//video play -> baisse opacity des images
+myVideo.addEventListener("playing", () => {
+      for (var i = 0; i < 6; i++) {
+            document.getElementsByClassName('img')[i].style.opacity='0.1';
+      }
+  
+});
+
+//video pause -> augmente opacity des images
+myVideo.addEventListener("pause", () => {
+      for (var i = 0; i < 6; i++) {
+            document.getElementsByClassName('img')[i].style.opacity='0.9';
+      }
+  
+});
+
 </script>
+
 

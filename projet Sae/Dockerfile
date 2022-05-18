@@ -6,7 +6,7 @@ COPY . /usr/share/nginx/html
 
 RUN  apt-get update && \
     apt-get -y install  \
-    apache2 
+    nginx 
 
 
 # Exécuter la commande echo sur le conteneur 
@@ -17,4 +17,4 @@ RUN echo index.html
 # Rendre le port 80 accessible au monde en dehors de ce conteneur
 EXPOSE 80  
 
-CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]
+CMD ["nginx", "-g", "daemon off;"]

@@ -9,9 +9,7 @@ RUN  apt-get update && \
     apache2 \
     mariadb-server \
     mariadb-client \
-    php \
-    php-mysql \
-    libapache2-mod-php
+    html
 
 
 # Exécuter la commande echo sur le conteneur 

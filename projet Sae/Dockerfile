@@ -2,7 +2,7 @@
 FROM debian:latest
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
-COPY . /usr/share/nginx/html
+
 
 RUN  apt-get update && \
     apt-get -y install  \

@@ -118,9 +118,8 @@ h1{
 
 img {
       margin: 12px;
-      width: 8%;
+      width: 15%;
       border: solid white 2px;
-      height: 15%;
       transition: 1s;
 }
 
@@ -130,7 +129,6 @@ img:hover{
 
 a {
       height: 100%;
-      width: 100%; 
       display: contents;
 }
 

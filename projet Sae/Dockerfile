@@ -6,8 +6,7 @@ RUN  apt-get update && \
     nginx 
 
 # Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
-COPY . /usr/share/nginx/html
-# COPY ./index.html /usr/share/nginx/html/index.html
+COPY . /var/www/html/
 COPY ./index.html /var/www/html/index.nginx-debian.html
 
 

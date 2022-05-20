@@ -163,4 +163,53 @@ video.videoServeur{
 
       
 
-      
+
+
+@media screen and (max-width: 1680px)
+{
+  .presentation{
+    height: 130vh;
+  }
+
+  img{
+    width: 13%;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+  .presentation{
+    height: 180vh;
+  }
+
+  img{
+    width: 100%;
+    margin: 0%
+  }
+
+  div.title{
+    margin-top: -15%;
+  }
+
+  video.videoServeur{
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    box-shadow: rgb(239 173 237 / 25%) 0px 54px 55px, rgb(243 149 231 / 12%) 0px -12px 30px, rgb(234 166 235 / 12%) 0px 4px 6px, rgb(239 190 228 / 17%) 0px 12px 13px, rgb(233 177 205 / 9%) 0px -3px 5px;
+    margin-top: 30%;
+    position: absolute;
+    width: 100%;
+  }
+
+  footer{
+        margin-top: 200%;
+  }
+
+  img.logo{
+    display: none;
+  }
+
+  a.contact{
+    display: none;
+  }
+}

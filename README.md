@@ -7,6 +7,8 @@ ssh di-docker
 -une fois connecté a docker : clonez notre dépot git hub grace à la commande suivante :
 git clone 
 
+-déplacer vous dans le dossier projet sae avec cd
+
 -entrez cette commande pour créer l'image :
 docker build -t videostream_grp11-img .  
 

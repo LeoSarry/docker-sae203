@@ -1,18 +1,14 @@
-# docker-sae203
+# Sae2.03
 
--Pour lancer le serveur : il faut vous connecter à docker :
-ssh di-docker
+# Choix du groupe
+-Nous avons décidé de faire un site de vidéo à la demande pusique c'est ce qui nous parlait le plus à tous. Rien qu'au titre, nous avions déjà des idées pour le créer.
+-Nous avons pris le support nginx car il proposait davantages de difficulté qu'apache, ainsi que mr Jimenez l'avait dit. De plus, il est open source et propose de grande performance ce qui est utile pour un site de video à la demande. 
 
--entrez votre mot de passe 
--une fois connecté a docker : clonez notre dépot git hub grace à la commande suivante :
-git clone 
+# Repartition des taches dans le groupe
+Léo Sarry : hébergement du github + logique des commandes du docker + dockerfile
+Hugo Legrand : docker + dockerfile
+Driss Lahbib El Bour Fournier : recherche d'informations sur nginx + conception du site en relation avec son projet personnel + commandes docker
+Lucien Le Roux : recherche docker + github
 
--entrez cette commande pour créer l'image :
-docker build -t videostream_grp11-img .  
 
--entreé cette commande pour créer le conteneur :
-docker run --name videostream_grp11-docker -d -p 3476:80 videostream_grp11-img
 
-- ouvrez votre navigateur web : tapez di-docker:3476 dans votre bar d'adresse
-
-(https://support.github.com/contact) and we’ll help you sort it out.

@@ -1,6 +1,6 @@
 # docker-sae203
 
--Pour lancer le serveur : il faut vous connecter à docker :
+-Pour lancer le conteneur : il faut vous connecter à docker :
 ssh di-docker
 
 -entrez votre mot de passe 
